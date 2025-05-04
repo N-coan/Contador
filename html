@@ -1,0 +1,54 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Cliente</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Cliente</h1>
+    <form>
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="numero">Número para contato:</label>
+      <input type="numero" id="numero" name="numero" required />
+
+      <label>Sexo:</label>
+      <div class="sexo">
+        <label><input type="radio" name="sexo" value="masculino" required /> Masculino</label>
+        <label><input type="radio" name="sexo" value="feminino" /> Feminino</label>
+        <label><input type="radio" name="sexo" value="outro" /> Outro</label>
+      </div>
+
+      <label for="estadocivil">Estado Civil:</label>
+      <select id="estadocivil" name="estadocivil" required>
+        <option value="">Selecione</option>
+        <option value="Solteiro(a)">Solteiro(a)</option>
+        <option value="Casado(a)">Casado(a)</option>
+        <option value="Divorciado(a)">Divorciado(a)</option>
+        <option value="Separado(a)">Separado(a)</option>
+        <option value="Viúvo(a)">Viúvo(a)</option>
+        <option value="União estável">União estável</option>
+
+      </select>
+
+      <label for="escolaridade">Escolaridade:</label>
+      <select id="escolaridade" name="escolaridade" required>
+        <option value="">Selecione</option>
+        <option value="Ensino Fundamental">Ensino Fundamental</option>
+        <option value="Ensino Medio">Ensino Médio</option>
+        <option value="Ensino superior">Ensino Superior</option>
+        <option value="pos">Pós-graduação</option>
+      </select>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
